@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Base button styles */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3; /* Default background color */
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 60px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+
+/* Shadow effect using :after pseudo-element */
+.button-56:after {
+  background-color: rgba(0, 0, 0, 0.7); /* Lighter shadow color */
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 62px; /* Slightly larger than the button to create the shadow effect */
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(4px, 4px); /* Initial shadow position */
+  transition: transform 0.2s ease-out; /* Smooth transition for shadow movement */
+  z-index: -1;
+}
+
+/* Hover state for button */
+.button-56:hover {
+  background-color: #a68a64; /* Lighter brown color for better readability */
+}
+
+/* Shadow effect on hover */
+.button-56:hover:after {
+  transform: translate(0, 0); /* Move shadow to be directly behind the button */
+}
+
+/* Active state for button */
+.button-56:active {
+  background-color: #ffdeda; /* Background color when button is pressed */
+  outline: 0; /* Remove default outline on active state */
+}
+
+
+.plusOrMinus {
+  align-items: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: black; /* Font color is always black */
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: bold; /* Make text bold */
+  height: 40px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: transparent; /* Set the background to be clear */
+  border: none; /* Remove outline */
+  box-shadow: none; /* Remove shadow */
+  transition: background-color 0.3s, box-shadow 0.3s, border 0.3s; /* Smooth transition for background, shadow, and border */
+}
+
+
+
+.plusOrMinus:hover {
+  background-color: #f8d7da; /* Light pink background on hover */
+  border: 2px solid #111; /* Add black outline on hover */
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 1); /* Solid box shadow on hover */
+}
